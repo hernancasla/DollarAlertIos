@@ -14,6 +14,7 @@
 		54A7159E2A56B3670017A5B1 /* DollarAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7159D2A56B3670017A5B1 /* DollarAlertTests.swift */; };
 		54A715A82A56B3670017A5B1 /* DollarAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A715A72A56B3670017A5B1 /* DollarAlertUITests.swift */; };
 		54A715AA2A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A715A92A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift */; };
+		54A715BE2A56BD870017A5B1 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A715BD2A56BD870017A5B1 /* CurrencyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		54A715A32A56B3670017A5B1 /* DollarAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollarAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A715A72A56B3670017A5B1 /* DollarAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAlertUITests.swift; sourceTree = "<group>"; };
 		54A715A92A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAlertUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54A715BD2A56BD870017A5B1 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,14 @@
 		54A7158B2A56B3660017A5B1 /* DollarAlert */ = {
 			isa = PBXGroup;
 			children = (
+				54A715BC2A56B54B0017A5B1 /* Config */,
+				54A715BB2A56B53D0017A5B1 /* Resources */,
+				54A715BA2A56B5310017A5B1 /* Helpers */,
+				54A715B92A56B5270017A5B1 /* Services */,
+				54A715B82A56B5190017A5B1 /* Controllers */,
+				54A715B72A56B50E0017A5B1 /* Views */,
+				54A715B62A56B4F10017A5B1 /* Models */,
 				54A7158C2A56B3660017A5B1 /* DollarAlertApp.swift */,
-				54A7158E2A56B3660017A5B1 /* ContentView.swift */,
 				54A715902A56B3670017A5B1 /* Assets.xcassets */,
 				54A715922A56B3670017A5B1 /* Preview Content */,
 			);
@@ -125,6 +133,57 @@
 				54A715A92A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift */,
 			);
 			path = DollarAlertUITests;
+			sourceTree = "<group>";
+		};
+		54A715B62A56B4F10017A5B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54A715B72A56B50E0017A5B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54A7158E2A56B3660017A5B1 /* ContentView.swift */,
+				54A715BD2A56BD870017A5B1 /* CurrencyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54A715B82A56B5190017A5B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		54A715B92A56B5270017A5B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		54A715BA2A56B5310017A5B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		54A715BB2A56B53D0017A5B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		54A715BC2A56B54B0017A5B1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +318,7 @@
 			files = (
 				54A7158F2A56B3660017A5B1 /* ContentView.swift in Sources */,
 				54A7158D2A56B3660017A5B1 /* DollarAlertApp.swift in Sources */,
+				54A715BE2A56BD870017A5B1 /* CurrencyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
