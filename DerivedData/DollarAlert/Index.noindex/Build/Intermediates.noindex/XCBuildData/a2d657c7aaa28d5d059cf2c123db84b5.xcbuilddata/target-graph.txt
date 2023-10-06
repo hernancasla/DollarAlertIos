@@ -1,0 +1,13 @@
+Target dependency graph (8 targets)
+Target 'DollarAlertUITests' in project 'DollarAlert' (no dependencies)
+Target 'DollarAlertUITests' in project 'DollarAlert'
+➜ Explicit dependency on target 'DollarAlert' in project 'DollarAlert'
+Target 'DollarAlertUITests' in project 'DollarAlert'
+➜ Explicit dependency on target 'DollarAlert' in project 'DollarAlert'
+Target 'DollarAlertTests' in project 'DollarAlert' (no dependencies)
+Target 'DollarAlertTests' in project 'DollarAlert'
+➜ Explicit dependency on target 'DollarAlert' in project 'DollarAlert'
+Target 'DollarAlertTests' in project 'DollarAlert'
+➜ Explicit dependency on target 'DollarAlert' in project 'DollarAlert'
+Target 'DollarAlert' in project 'DollarAlert' (no dependencies)
+Target 'DollarAlert' in project 'DollarAlert' (no dependencies)

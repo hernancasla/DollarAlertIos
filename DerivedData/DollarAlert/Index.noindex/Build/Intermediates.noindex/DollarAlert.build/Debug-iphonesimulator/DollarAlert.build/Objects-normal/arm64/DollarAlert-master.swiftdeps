@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+options: "10bec8aceaecf373668c8c3c799a198e2cba3fb51032594a20573eb876161f34"
+build_start_time: [1696456558, 261745000]
+build_end_time: [1696456562, 776766000]
+inputs:
+  ? "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1696456556, 167439776]
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/AppDelegate.swift": [1696456370, 826423524]
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/DollarAlertApp.swift": [1688632294, 782797879]
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Models/ExchangeRateData.swift": [1696335827, 237118856]
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Services/CurrencyService.swift": [1696336147, 400329926]
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/ContentView.swift": [1696427811, 672525109]
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift": [1696455547, 717070287]

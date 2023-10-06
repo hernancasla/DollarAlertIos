@@ -1,0 +1,12 @@
+{
+  "" : {
+    "dependencies" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphoneos/DollarAlertTests.build/Objects-normal/arm64/DollarAlertTests-master.d",
+    "diagnostics" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphoneos/DollarAlertTests.build/Objects-normal/arm64/DollarAlertTests-master.dia",
+    "emit-module-dependencies" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphoneos/DollarAlertTests.build/Objects-normal/arm64/DollarAlertTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphoneos/DollarAlertTests.build/Objects-normal/arm64/DollarAlertTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphoneos/DollarAlertTests.build/Objects-normal/arm64/DollarAlertTests-master.swiftdeps"
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlertTests/DollarAlertTests.swift" : {
+
+  }
+}

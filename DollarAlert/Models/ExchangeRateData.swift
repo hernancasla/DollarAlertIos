@@ -1,11 +1,10 @@
 import Foundation
 
-struct ExchangeRate: Identifiable, Codable {
-    let exchanges: [CurrencyData]
-    let date: Date
-    let id = UUID()
+struct ExchangeRateData: Codable {
+    let exchanges: [ExchangeRate]
+    let date: String
 }
-struct CurrencyData: Identifiable, Codable {
+struct ExchangeRate: Identifiable, Codable {
     let sellValue: Double
     let buyValue: Double
     let type: String

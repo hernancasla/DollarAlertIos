@@ -11,41 +11,38 @@
 		54A7158F2A56B3660017A5B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7158E2A56B3660017A5B1 /* ContentView.swift */; };
 		54A715912A56B3670017A5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A715902A56B3670017A5B1 /* Assets.xcassets */; };
 		54A715942A56B3670017A5B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A715932A56B3670017A5B1 /* Preview Assets.xcassets */; };
-		54A7159E2A56B3670017A5B1 /* DollarAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7159D2A56B3670017A5B1 /* DollarAlertTests.swift */; };
-		54A715A82A56B3670017A5B1 /* DollarAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A715A72A56B3670017A5B1 /* DollarAlertUITests.swift */; };
-		54A715AA2A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A715A92A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift */; };
 		54A715BE2A56BD870017A5B1 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A715BD2A56BD870017A5B1 /* CurrencyView.swift */; };
+		54EF159B2ACE97E6007E72A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF159A2ACE97E6007E72A0 /* AppDelegate.swift */; };
+		54EF15A22ACEABA1007E72A0 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 54EF15A12ACEABA1007E72A0 /* GoogleMobileAds */; };
+		DB13E7217244165928247BF1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DB13EB2E1AB19CADD324876C /* Podfile */; };
+		DB13E9DA27D5DFE97B6D9BE9 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13EFA8B5B6E4210C694706 /* CurrencyService.swift */; };
+		DB13EC195E1DF63C7112EB9D /* ExchangeRateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13E60CA665B516534C6C5A /* ExchangeRateData.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		54A7159A2A56B3670017A5B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54A715812A56B3660017A5B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54A715882A56B3660017A5B1;
-			remoteInfo = DollarAlert;
-		};
-		54A715A42A56B3670017A5B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54A715812A56B3660017A5B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54A715882A56B3660017A5B1;
-			remoteInfo = DollarAlert;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0156295AE6E7AAE725866522 /* Pods-DollarAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollarAlert.release.xcconfig"; path = "Target Support Files/Pods-DollarAlert/Pods-DollarAlert.release.xcconfig"; sourceTree = "<group>"; };
+		053D67D1C5841D3EAE208180 /* Pods-DollarAlert-DollarAlertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollarAlert-DollarAlertUITests.debug.xcconfig"; path = "Target Support Files/Pods-DollarAlert-DollarAlertUITests/Pods-DollarAlert-DollarAlertUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DBA65CE734913E7C2FDC8D3 /* Pods_DollarAlert_DollarAlertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollarAlert_DollarAlertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A715892A56B3660017A5B1 /* DollarAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollarAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A7158C2A56B3660017A5B1 /* DollarAlertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAlertApp.swift; sourceTree = "<group>"; };
 		54A7158E2A56B3660017A5B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		54A715902A56B3670017A5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A715932A56B3670017A5B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		54A715992A56B3670017A5B1 /* DollarAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollarAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A7159D2A56B3670017A5B1 /* DollarAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAlertTests.swift; sourceTree = "<group>"; };
-		54A715A32A56B3670017A5B1 /* DollarAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollarAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A715A72A56B3670017A5B1 /* DollarAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAlertUITests.swift; sourceTree = "<group>"; };
 		54A715A92A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAlertUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54A715BD2A56BD870017A5B1 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		54EF159A2ACE97E6007E72A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6008D08F3D35997D794F3AF5 /* Pods-DollarAlert-DollarAlertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollarAlert-DollarAlertUITests.release.xcconfig"; path = "Target Support Files/Pods-DollarAlert-DollarAlertUITests/Pods-DollarAlert-DollarAlertUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61AC87206FD5C6F06E2BA066 /* Pods-DollarAlertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollarAlertTests.release.xcconfig"; path = "Target Support Files/Pods-DollarAlertTests/Pods-DollarAlertTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7A336BC9944BB803319E317 /* Pods-DollarAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollarAlert.debug.xcconfig"; path = "Target Support Files/Pods-DollarAlert/Pods-DollarAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		B6B3A189F2A45E9973FAF14B /* Pods-DollarAlertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollarAlertTests.debug.xcconfig"; path = "Target Support Files/Pods-DollarAlertTests/Pods-DollarAlertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C35E36827B004FB053F9F431 /* Pods_DollarAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollarAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E34482745FB012FB55B210 /* Pods_DollarAlertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollarAlertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB13E60CA665B516534C6C5A /* ExchangeRateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateData.swift; sourceTree = "<group>"; };
+		DB13E7EAF84232CFC5C1231D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		DB13EB2E1AB19CADD324876C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DB13EFA8B5B6E4210C694706 /* CurrencyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,26 +50,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54A715962A56B3670017A5B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54A715A02A56B3670017A5B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				54EF15A22ACEABA1007E72A0 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9DA71980B0CFC89D88373F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7A336BC9944BB803319E317 /* Pods-DollarAlert.debug.xcconfig */,
+				0156295AE6E7AAE725866522 /* Pods-DollarAlert.release.xcconfig */,
+				053D67D1C5841D3EAE208180 /* Pods-DollarAlert-DollarAlertUITests.debug.xcconfig */,
+				6008D08F3D35997D794F3AF5 /* Pods-DollarAlert-DollarAlertUITests.release.xcconfig */,
+				B6B3A189F2A45E9973FAF14B /* Pods-DollarAlertTests.debug.xcconfig */,
+				61AC87206FD5C6F06E2BA066 /* Pods-DollarAlertTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		54A715802A56B3660017A5B1 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +77,10 @@
 				54A7159C2A56B3670017A5B1 /* DollarAlertTests */,
 				54A715A62A56B3670017A5B1 /* DollarAlertUITests */,
 				54A7158A2A56B3660017A5B1 /* Products */,
+				DB13EB2E1AB19CADD324876C /* Podfile */,
+				1C9DA71980B0CFC89D88373F /* Pods */,
+				DB13E7EAF84232CFC5C1231D /* Info.plist */,
+				D9F1CA29AF97A525E74C12E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				54A715892A56B3660017A5B1 /* DollarAlert.app */,
-				54A715992A56B3670017A5B1 /* DollarAlertTests.xctest */,
-				54A715A32A56B3670017A5B1 /* DollarAlertUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,12 +99,12 @@
 				54A715BB2A56B53D0017A5B1 /* Resources */,
 				54A715BA2A56B5310017A5B1 /* Helpers */,
 				54A715B92A56B5270017A5B1 /* Services */,
-				54A715B82A56B5190017A5B1 /* Controllers */,
 				54A715B72A56B50E0017A5B1 /* Views */,
 				54A715B62A56B4F10017A5B1 /* Models */,
 				54A7158C2A56B3660017A5B1 /* DollarAlertApp.swift */,
 				54A715902A56B3670017A5B1 /* Assets.xcassets */,
 				54A715922A56B3670017A5B1 /* Preview Content */,
+				54EF159A2ACE97E6007E72A0 /* AppDelegate.swift */,
 			);
 			path = DollarAlert;
 			sourceTree = "<group>";
@@ -138,6 +137,7 @@
 		54A715B62A56B4F10017A5B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DB13E60CA665B516534C6C5A /* ExchangeRateData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,16 +151,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		54A715B82A56B5190017A5B1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		54A715B92A56B5270017A5B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DB13EFA8B5B6E4210C694706 /* CurrencyService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -186,6 +180,16 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		D9F1CA29AF97A525E74C12E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA65CE734913E7C2FDC8D3 /* Pods_DollarAlert_DollarAlertUITests.framework */,
+				D9E34482745FB012FB55B210 /* Pods_DollarAlertTests.framework */,
+				C35E36827B004FB053F9F431 /* Pods_DollarAlert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54A715AD2A56B3670017A5B1 /* Build configuration list for PBXNativeTarget "DollarAlert" */;
 			buildPhases = (
+				0F9E89418C477AF2AD5BBA6C /* [CP] Check Pods Manifest.lock */,
 				54A715852A56B3660017A5B1 /* Sources */,
 				54A715862A56B3660017A5B1 /* Frameworks */,
 				54A715872A56B3660017A5B1 /* Resources */,
@@ -202,45 +207,12 @@
 			dependencies = (
 			);
 			name = DollarAlert;
+			packageProductDependencies = (
+				54EF15A12ACEABA1007E72A0 /* GoogleMobileAds */,
+			);
 			productName = DollarAlert;
 			productReference = 54A715892A56B3660017A5B1 /* DollarAlert.app */;
 			productType = "com.apple.product-type.application";
-		};
-		54A715982A56B3670017A5B1 /* DollarAlertTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54A715B02A56B3670017A5B1 /* Build configuration list for PBXNativeTarget "DollarAlertTests" */;
-			buildPhases = (
-				54A715952A56B3670017A5B1 /* Sources */,
-				54A715962A56B3670017A5B1 /* Frameworks */,
-				54A715972A56B3670017A5B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				54A7159B2A56B3670017A5B1 /* PBXTargetDependency */,
-			);
-			name = DollarAlertTests;
-			productName = DollarAlertTests;
-			productReference = 54A715992A56B3670017A5B1 /* DollarAlertTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		54A715A22A56B3670017A5B1 /* DollarAlertUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54A715B32A56B3670017A5B1 /* Build configuration list for PBXNativeTarget "DollarAlertUITests" */;
-			buildPhases = (
-				54A7159F2A56B3670017A5B1 /* Sources */,
-				54A715A02A56B3670017A5B1 /* Frameworks */,
-				54A715A12A56B3670017A5B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				54A715A52A56B3670017A5B1 /* PBXTargetDependency */,
-			);
-			name = DollarAlertUITests;
-			productName = DollarAlertUITests;
-			productReference = 54A715A32A56B3670017A5B1 /* DollarAlertUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -255,14 +227,6 @@
 					54A715882A56B3660017A5B1 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
-					54A715982A56B3670017A5B1 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 54A715882A56B3660017A5B1;
-					};
-					54A715A22A56B3670017A5B1 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 54A715882A56B3660017A5B1;
-					};
 				};
 			};
 			buildConfigurationList = 54A715842A56B3660017A5B1 /* Build configuration list for PBXProject "DollarAlert" */;
@@ -274,13 +238,14 @@
 				Base,
 			);
 			mainGroup = 54A715802A56B3660017A5B1;
+			packageReferences = (
+				54EF15A02ACEABA1007E72A0 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 54A7158A2A56B3660017A5B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				54A715882A56B3660017A5B1 /* DollarAlert */,
-				54A715982A56B3670017A5B1 /* DollarAlertTests */,
-				54A715A22A56B3670017A5B1 /* DollarAlertUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,72 +257,58 @@
 			files = (
 				54A715942A56B3670017A5B1 /* Preview Assets.xcassets in Resources */,
 				54A715912A56B3670017A5B1 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54A715972A56B3670017A5B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54A715A12A56B3670017A5B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DB13E7217244165928247BF1 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F9E89418C477AF2AD5BBA6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DollarAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54A715852A56B3660017A5B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EF159B2ACE97E6007E72A0 /* AppDelegate.swift in Sources */,
 				54A7158F2A56B3660017A5B1 /* ContentView.swift in Sources */,
 				54A7158D2A56B3660017A5B1 /* DollarAlertApp.swift in Sources */,
 				54A715BE2A56BD870017A5B1 /* CurrencyView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54A715952A56B3670017A5B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54A7159E2A56B3670017A5B1 /* DollarAlertTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54A7159F2A56B3670017A5B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54A715A82A56B3670017A5B1 /* DollarAlertUITests.swift in Sources */,
-				54A715AA2A56B3670017A5B1 /* DollarAlertUITestsLaunchTests.swift in Sources */,
+				DB13E9DA27D5DFE97B6D9BE9 /* CurrencyService.swift in Sources */,
+				DB13EC195E1DF63C7112EB9D /* ExchangeRateData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		54A7159B2A56B3670017A5B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54A715882A56B3660017A5B1 /* DollarAlert */;
-			targetProxy = 54A7159A2A56B3670017A5B1 /* PBXContainerItemProxy */;
-		};
-		54A715A52A56B3670017A5B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54A715882A56B3660017A5B1 /* DollarAlert */;
-			targetProxy = 54A715A42A56B3670017A5B1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		54A715AB2A56B3670017A5B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -412,12 +363,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		54A715AC2A56B3670017A5B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -465,30 +418,50 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		54A715AE2A56B3670017A5B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A336BC9944BB803319E317 /* Pods-DollarAlert.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DollarAlert/Preview Content\"";
+				DEVELOPMENT_TEAM = 4R8364RUC6;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleUserMessagingPlatform/Frameworks/Release\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleUserMessagingPlatform\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coh.DollarAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -499,101 +472,49 @@
 		};
 		54A715AF2A56B3670017A5B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0156295AE6E7AAE725866522 /* Pods-DollarAlert.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DollarAlert/Preview Content\"";
+				DEVELOPMENT_TEAM = 4R8364RUC6;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleUserMessagingPlatform/Frameworks/Release\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleUserMessagingPlatform\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_DOCC_FLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coh.DollarAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		54A715B12A56B3670017A5B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coh.DollarAlertTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DollarAlert.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DollarAlert";
-			};
-			name = Debug;
-		};
-		54A715B22A56B3670017A5B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coh.DollarAlertTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DollarAlert.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DollarAlert";
-			};
-			name = Release;
-		};
-		54A715B42A56B3670017A5B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coh.DollarAlertUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DollarAlert;
-			};
-			name = Debug;
-		};
-		54A715B52A56B3670017A5B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coh.DollarAlertUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DollarAlert;
 			};
 			name = Release;
 		};
@@ -618,25 +539,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54A715B02A56B3670017A5B1 /* Build configuration list for PBXNativeTarget "DollarAlertTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54A715B12A56B3670017A5B1 /* Debug */,
-				54A715B22A56B3670017A5B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54A715B32A56B3670017A5B1 /* Build configuration list for PBXNativeTarget "DollarAlertUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54A715B42A56B3670017A5B1 /* Debug */,
-				54A715B52A56B3670017A5B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54EF15A02ACEABA1007E72A0 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54EF15A12ACEABA1007E72A0 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EF15A02ACEABA1007E72A0 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54A715812A56B3660017A5B1 /* Project object */;
 }

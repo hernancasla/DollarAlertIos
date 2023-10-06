@@ -1,0 +1,6 @@
+framework module Pods_DollarAlert {
+  umbrella header "Pods-DollarAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

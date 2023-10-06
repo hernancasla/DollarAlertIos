@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+options: "c28b97ac9339b96e7085933824d4f08ea13dc24f62340d43af7bac3d75a3816e"
+build_start_time: [1696456558, 836745000]
+build_end_time: [1696456562, 776083000]
+inputs:
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlertTests/DollarAlertTests.swift": [1688632295, 585780233]

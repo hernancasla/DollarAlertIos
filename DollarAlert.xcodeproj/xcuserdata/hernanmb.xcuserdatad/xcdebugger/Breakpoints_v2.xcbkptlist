@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AA33E8C5-DE4C-4905-B6B9-0ECE86778FB2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8619E91C-BF4E-47F7-A7FA-A71CB4272E3E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8619E91C-BF4E-47F7-A7FA-A71CB4272E3E - fe38c8aa3acb7b2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt;&gt;, SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt; in DollarAlert.CurrencyGridView.body.getter : some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "8619E91C-BF4E-47F7-A7FA-A71CB4272E3E - 94d2b20055e5cfaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int) -&gt; SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt;&gt;, SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt; in DollarAlert.CurrencyGridView.body.getter : some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "8619E91C-BF4E-47F7-A7FA-A71CB4272E3E - 7dd8fb36cc023113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt;&gt;, SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of DollarAlert.CurrencyGridView.createPanelView(index: Swift.Int, size: __C.CGSize) -&gt; some&gt;&gt;.0&gt;&gt;&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in DollarAlert.CurrencyGridView.body.getter : some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "692">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

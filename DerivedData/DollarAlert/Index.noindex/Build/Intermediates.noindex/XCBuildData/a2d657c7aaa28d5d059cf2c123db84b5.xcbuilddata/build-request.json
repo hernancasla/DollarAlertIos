@@ -1,0 +1,65 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "f22151d2e0aa5bdcb47c9fbb7e61c4463ff3e32ef4543bf89d0f8896a9af5333"
+    },
+    {
+      "guid" : "f22151d2e0aa5bdcb47c9fbb7e61c446bd0e9c76fa0755ec0b37e5208fbf8550"
+    },
+    {
+      "guid" : "f22151d2e0aa5bdcb47c9fbb7e61c4466210c9fe15b2b69b7ae115dc921e9f30"
+    }
+  ],
+  "containerPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.0",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Build/Products",
+      "pchPath" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

@@ -1,0 +1,30 @@
+{
+  "" : {
+    "dependencies" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/Objects-normal/arm64/DollarAlert-master.d",
+    "diagnostics" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/Objects-normal/arm64/DollarAlert-master.dia",
+    "emit-module-dependencies" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/Objects-normal/arm64/DollarAlert-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/Objects-normal/arm64/DollarAlert-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/Objects-normal/arm64/DollarAlert-master.swiftdeps"
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DerivedData/DollarAlert/Index.noindex/Build/Intermediates.noindex/DollarAlert.build/Debug-iphonesimulator/DollarAlert.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/AppDelegate.swift" : {
+
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/DollarAlertApp.swift" : {
+
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Models/ExchangeRateData.swift" : {
+
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Services/CurrencyService.swift" : {
+
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/ContentView.swift" : {
+
+  },
+  "/Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift" : {
+
+  }
+}

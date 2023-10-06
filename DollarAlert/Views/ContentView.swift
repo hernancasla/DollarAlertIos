@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
             NavigationView {
                 CurrencyGridView()
-                    .navigationBarTitle("Currency Grid")
+                    .navigationBarTitle("Cotizaciones del Dólar", displayMode: .inline)
+
             }
         }
 }
