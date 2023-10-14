@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             NavigationView {
-                CurrencyGridView()
-                    .navigationBarTitle("Cotizaciones del Dólar", displayMode: .inline)
+                CurrencyGridView().navigationBarTitle("Cotización del Dólar", displayMode: .inline)
+            }.navigationViewStyle(StackNavigationViewStyle())
+            .accentColor(.white)
 
-            }
+
         }
 }
 

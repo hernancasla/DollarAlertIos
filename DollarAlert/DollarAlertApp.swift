@@ -14,9 +14,10 @@ struct DollarAlertApp: App {
 
     var body: some Scene {
         WindowGroup {
+
             ContentView()
-            AdBannerView()
-                            .frame(width: UIScreen.main.bounds.size.width, height: 100)
+            AdBannerView().frame(width: UIScreen.main.bounds.size.width, height: 50)
+
         }
     }
     
@@ -35,8 +36,8 @@ struct CurrencyGridViewPreviews: PreviewProvider {
 struct AdBannerView: UIViewRepresentable {
     func makeUIView(context: Context) -> GADBannerView {
         let bannerView = GADBannerView(adSize: GADAdSize.init())
-        //bannerView.adUnitID = "ca-app-pub-6316074233631898/4304065378"
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-6316074233631898/4304065378"
+        //bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = UIApplication.shared.windows.first?.rootViewController
         return bannerView
     }

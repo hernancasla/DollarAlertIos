@@ -14,8 +14,8 @@
             filePath = "DollarAlert/Views/CurrencyView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -65,6 +65,340 @@
                   offsetFromSymbolStart = "692">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "528BF6FD-6DF3-4B95-89A7-86FF485DD4EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Services/CurrencyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchExchangeData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C2BFEAA-3728-42AC-BDAD-9523FC4BC63F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Services/CurrencyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchExchangeData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CF07611-A371-4935-8778-E47045F00340"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Services/CurrencyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchExchangeData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C874F2A-BC29-41D3-BEB3-DA07D8532B83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "formatNumber(_:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3AFBCDA-FB27-4459-9ED9-DD1539E34032"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "325D0035-0895-4D02-A792-5F373225CE3E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "getHistoryByType(type:exchangeHistory:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "325D0035-0895-4D02-A792-5F373225CE3E - 4099203230ce2e46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DollarAlert.CurrencyGridView.ExchangeDetail.getHistoryByType(type: Swift.String, exchangeHistory: DollarAlert.ExchangeHistory) -&gt; Swift.Dictionary&lt;Swift.String, (Swift.Double, Swift.Double)&gt;"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "325D0035-0895-4D02-A792-5F373225CE3E - 4099203230ce2e46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DollarAlert.CurrencyGridView.ExchangeDetail.getHistoryByType(type: Swift.String, exchangeHistory: DollarAlert.ExchangeHistory) -&gt; Swift.Dictionary&lt;Swift.String, (Swift.Double, Swift.Double)&gt;"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "325D0035-0895-4D02-A792-5F373225CE3E - 8acdeb35bb95389e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DollarAlert.CurrencyGridView.ExchangeDetail.getHistoryByType(type: Swift.String, exchangeHistory: DollarAlert.ExchangeHistory) -&gt; some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "728">
+               </Location>
+               <Location
+                  uuid = "325D0035-0895-4D02-A792-5F373225CE3E - 8acdeb35bb95389e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DollarAlert.CurrencyGridView.ExchangeDetail.getHistoryByType(type: Swift.String, exchangeHistory: DollarAlert.ExchangeHistory) -&gt; some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "856">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "544E096F-BBE1-4AD6-A35C-C349565E9D3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "544E096F-BBE1-4AD6-A35C-C349565E9D3C - f0161afa7388987f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;SwiftUI.EmptyView&gt; in DollarAlert.CurrencyGridView.ExchangeDetail.body.getter : some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "544E096F-BBE1-4AD6-A35C-C349565E9D3C - df388d1829f17c34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of DollarAlert.CurrencyGridView.ExchangeDetail.getHistoryByType(type: Swift.String, exchangeHistory: DollarAlert.ExchangeHistory) -&gt; some&gt;&gt;.0&gt; in DollarAlert.CurrencyGridView.ExchangeDetail.body.getter : some"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Views/CurrencyView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A3B6F25-0152-4031-BEF9-45EBE1F98D3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "getHistoryByType(type:exchangeHistory:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6E7CDB6-3927-4636-B555-22F9523E10E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "getHistoryByType(type:exchangeHistory:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD98D202-C31B-4584-A836-908B57A16EF0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/CurrencyView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "getHistoryByType(type:exchangeHistory:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "023CD79B-AABC-4DEE-B8E1-8F2B21310C20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Services/CurrencyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchExchangeData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BD67446-9C8A-4B5C-91C9-98BFD9FACACF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Services/CurrencyService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchExchangeData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BD67446-9C8A-4B5C-91C9-98BFD9FACACF - e199dd42cb3deb1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DollarAlert.CurrencyService.fetchExchangeData(completion: (Swift.Result&lt;DollarAlert.ExchangeRateData, DollarAlert.CurrencyService.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Services/CurrencyService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "4BD67446-9C8A-4B5C-91C9-98BFD9FACACF - e199dd42cb3deb1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DollarAlert.CurrencyService.fetchExchangeData(completion: (Swift.Result&lt;DollarAlert.ExchangeRateData, DollarAlert.CurrencyService.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DollarAlert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hernanmb/Dev/projects/DollarAlert/DollarAlert/Services/CurrencyService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7894D7BB-F2E7-4E94-BDE1-6E0642C9BD25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DollarAlert/Views/SimulationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

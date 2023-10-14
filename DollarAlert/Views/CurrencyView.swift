@@ -1,16 +1,20 @@
 import SwiftUI
-import UIKit
 import GoogleMobileAds
 
 
 struct CurrencyGridView: View {
     private let currencyService = CurrencyService.shared
-    @State private var exchange: ExchangeRateData?
-    @State private var isLoading = false
+    //@ObservedObject private var exchange: ExchangeRateData?
+    //@ObservedObject private var exchangeHistory: ExchangeHistory?
+    @State private var timer: Timer?
+    @State private var isLinkActive = false
+    @ObservedObject var viewModel: ViewModel = ViewModel()
+
 
     var body: some View {
 
         VStack {
+            ToolBarView(viewModel: viewModel)
             HStack {
                 
                 Text("Compra")
@@ -21,45 +25,160 @@ struct CurrencyGridView: View {
 
 
                 Spacer()
+                VStack{
+                    Text("Última Actualización").font(.system(size: 12))
+                    if viewModel.isLoading {
+                        Text("...")
+                    } else if let exchangeData = viewModel.exchange {
+                        Text(formateDate(date: exchangeData.date))
+                            .font(.system(size: 12, weight: .bold)) // Cambia el tamaño y el peso de la fuente
 
+                    }
+                }.offset(y: 5)
+                Spacer()
                 Text("Venta")
                         .font(.headline)
                         .padding(.horizontal, 25)
                         .offset(y: 5)
                         .foregroundColor(.red)
-
-
             }
-                    //.foregroundColor(.blue)
-//                    .background(Color.pink)
-            if isLoading {
+            
+            if viewModel.isLoading {
                 Text("Cargando datos...")
-            } else if let exchangeData = exchange {
-                List(exchangeData.exchanges) { exchangeRate in
-                    ExchangeRateRow(exchangeRate: exchangeRate)
-                }
+            }
+            if let exchangeData = viewModel.exchange {
+                
+                    List(exchangeData.exchanges) { exchangeRate in
+                        
+                        NavigationLink(destination: ExchangeDetail(type: exchangeRate.type, history: viewModel.exchangeHistory)) {
+                            ExchangeRateRow(exchangeRate: exchangeRate)
+                        }
+                    }
             } else {
                 Text("No se pudo cargar la información.")
             }
         }.onAppear {
-                    fetchData()
-                }.toolbarBackground(Color.mint,for: .navigationBar)
-                //.toolbarBackground(Image("background-img"), for: .navigationBar)
-                .toolbarBackground(.visible, for: .navigationBar)
+            if let exchangeData = viewModel.exchange {
+                
+            } else {
+                viewModel.fetchData(withLoading: true)
+                DispatchQueue.global(qos: .background).async {
+                    viewModel.fetchHistoryData()
+                }
+                
+                scheduleTimer()
+            }
+        }.toolbarBackground(Color(red: 48 / 255.0, green: 159 / 255.0, blue: 204 / 255.0),for: .navigationBar)
+               .toolbarBackground(.visible, for: .navigationBar)
+                   
         
 
     }
-    struct DeviceRotationViewModifier: ViewModifier {
-        let action: (UIDeviceOrientation) -> Void
+    
+    
+    struct ExchangeDetail: View {
+        var type: String
+        var history: ExchangeHistory?
 
-        func body(content: Content) -> some View {
-            content
-                    .onAppear()
-                    .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                        action(UIDevice.current.orientation)
+        var body: some View {
+            VStack {
+                HStack {
+                    
+                    Text("Compra")
+                            .font(.headline)
+                            .padding(.horizontal, 25)
+                            .offset(y: 5)
+                            .foregroundColor(.green)
+
+                    Spacer()
+                    Text("Fecha")
+                        .padding(.horizontal, 25)
+                        .offset(y: 5)
+
+                    Spacer()
+                    Text("Venta")
+                            .font(.headline)
+                            .padding(.horizontal, 25)
+                            .offset(y: 5)
+                            .foregroundColor(.red)
+                }
+                if let value = history {
+                    
+                     getHistoryByType(type: type, exchangeHistory: value)
+                    
+                }
+            }
+            .navigationTitle("Dolar \(type)")
+            .toolbarBackground(Color(red: 48 / 255.0, green: 159 / 255.0, blue: 204 / 255.0),for: .navigationBar)
+                   .toolbarBackground(.visible, for: .navigationBar)
+        }
+        func getHistoryByType(type: String, exchangeHistory: ExchangeHistory) -> some View{
+            var groupedData = [String: (Double, Double, Double)]()
+            let counttype = exchangeHistory.dollarHistory.filter { $0.exchanges.contains { $0.type == type } }.count
+
+            for exchangeData in exchangeHistory.dollarHistory {
+                    for exchangeInfo in exchangeData.exchanges where exchangeInfo.type == type {
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "dd/MM/yyyy"
+                        let date = dateFormatter.string(from: exchangeData.date)
+                        
+                        if groupedData[date] == nil {
+                            groupedData[date] = (0, 0, 0)
+                        }
+                        
+                        groupedData[date]!.0 += exchangeInfo.sellValue
+                        groupedData[date]!.1 += exchangeInfo.buyValue
+                        groupedData[date]!.2 += 1
                     }
+                }
+            let sortedKeys = groupedData.keys.sorted().reversed()
+            let filteredData = sortedKeys.map { key in
+                (key, groupedData[key]!.0 / groupedData[key]!.2, groupedData[key]!.1 / groupedData[key]!.2)
+            }
+            return List {
+                ForEach(filteredData, id: \.0) { item in
+                    let (date, averageSellValue, averageBuyValue) = item
+                    HStack{
+
+                        Text(String(format: "$ %.0f", averageBuyValue))
+                                .font(.system(size: 18, weight: .bold))
+                                .padding(.trailing, -6)
+
+                        let decimalPart = averageBuyValue - Double(Int(averageBuyValue))
+                        let decimalInt = Int(decimalPart * 100)
+
+                        Text(formatNumber(decimalInt))
+                                .font(.system(size: 10, weight: .bold))
+                                .padding(.bottom, 6)
+
+                        Spacer()
+                        Text(date)
+                        Spacer()
+                        Text(String(format: "$ %.0f", averageSellValue))
+                                .font(.system(size: 18, weight: .bold))
+                                .padding(.trailing, -6)
+
+                        let decimalPartSell = averageSellValue - Double(Int(averageSellValue))
+                        let decimalIntSell = Int(decimalPartSell * 100)
+
+                        Text(formatNumber(decimalIntSell))
+                                .font(.system(size: 10, weight: .bold))
+                                .padding(.bottom, 6)
+                        
+                    }
+                }
+            }
         }
     }
+    
+    private func scheduleTimer() {
+        self.timer?.invalidate()
+
+        self.timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { _ in
+            viewModel.fetchData(withLoading: false)
+        }
+    }
+
     struct ExchangeRateRow: View {
         let exchangeRate: ExchangeRate
 
@@ -100,60 +219,17 @@ struct CurrencyGridView: View {
                 }
             }
         }
-    }
-    func createPanelView(size: CGSize, currency: String, operation: String, value: Double) -> some View {
-        VStack(spacing: 3) {
-
-            HStack {
-
-                Image("\(operation.lowercased())-img")
-                        .font(.system(size: 10)).offset(x: -5)
-
-                Text(String(format: "$ %.0f", value))
-                        .font(.system(size: 18, weight: .bold))
-                        .padding(.trailing, -6)
-
-                let decimalPart = value - Double(Int(value))
-                let decimalInt = Int(decimalPart * 100)
-
-                Text(formatNumber(decimalInt))
-                        .font(.system(size: 10, weight: .bold))
-                        .padding(.bottom, 6)
-
-            }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 8)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-
-            /*Text(currency + "/ " + operation)
-                .font(.system(size: 14, weight: .regular))*/
-
-            /*Text("Información adicional")
-                .font(.system(size: 12, weight: .regular))*/
-        }
-
+        
     }
 
+    func formateDate(date: Date) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm" // Establece el formato deseado
 
-
-    func fetchData() {
-        isLoading = true
-
-        CurrencyService.shared.fetchExchangeData { result in
-            DispatchQueue.main.async {
-                isLoading = false
-
-                switch result {
-                case .success(let data):
-                    exchange = data
-                case .failure(let error):
-                    print("Error: \(error)")
-                }
-            }
-        }
+        return dateFormatter.string(from: date)
     }
+
+    
 }
 func formatNumber(_ number: Int) -> String {
     // Convierte el número en una cadena
@@ -170,5 +246,45 @@ func formatNumber(_ number: Int) -> String {
         let endIndex = numberString.index(startIndex, offsetBy: 2)
         let firstTwoDigits = numberString[startIndex..<endIndex]
         return String(firstTwoDigits)
+    }
+}
+
+class ViewModel: ObservableObject {
+    @Published var exchange: ExchangeRateData?
+    @Published var exchangeHistory: ExchangeHistory?
+    @Published var isLoading = false
+
+    func fetchData(withLoading: Bool) {
+        isLoading = true && withLoading
+
+        CurrencyService.shared.fetchExchangeData { result in
+            DispatchQueue.main.async {
+                self.isLoading = false
+
+                switch result {
+                case .success(let data):
+                    if(data.date !=  self.exchange?.date){
+                        self.exchange = data
+                    }
+                    print("actualizacion")
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+            }
+        }
+    }
+    func fetchHistoryData() {
+        CurrencyService.shared.fetchExchangeHistory { result in
+            DispatchQueue.main.async {
+
+                switch result {
+                case .success(let data):
+                    self.exchangeHistory = data
+                    print("actualizacion")
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+            }
+        }
     }
 }
