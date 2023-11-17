@@ -15,15 +15,15 @@
 	<key>STORAGE_BUCKET</key>
 	<string>dolarizate-f3c71.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<true/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:171712020183:ios:409a6e331617f5b7a9fa92</string>
 </dict>

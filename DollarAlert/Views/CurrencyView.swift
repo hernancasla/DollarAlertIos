@@ -1,5 +1,6 @@
 import SwiftUI
 import GoogleMobileAds
+import FirebaseAnalytics
 
 
 struct CurrencyGridView: View {
@@ -15,6 +16,7 @@ struct CurrencyGridView: View {
 
         VStack {
             ToolBarView(viewModel: viewModel)
+
             HStack {
                 
                 Text("Compra")
@@ -51,13 +53,17 @@ struct CurrencyGridView: View {
                     List(exchangeData.exchanges) { exchangeRate in
                         
                         NavigationLink(destination: ExchangeDetail(type: exchangeRate.type, history: viewModel.exchangeHistory)) {
+
                             ExchangeRateRow(exchangeRate: exchangeRate)
                         }
                     }
             } else {
                 Text("No se pudo cargar la información.")
             }
+
+
         }.onAppear {
+
             if let exchangeData = viewModel.exchange {
                 
             } else {
@@ -68,6 +74,7 @@ struct CurrencyGridView: View {
                 
                 scheduleTimer()
             }
+
         }.toolbarBackground(Color(red: 48 / 255.0, green: 159 / 255.0, blue: 204 / 255.0),for: .navigationBar)
                .toolbarBackground(.visible, for: .navigationBar)
                    
@@ -107,33 +114,45 @@ struct CurrencyGridView: View {
                      getHistoryByType(type: type, exchangeHistory: value)
                     
                 }
+
             }
             .navigationTitle("Dolar \(type)")
             .toolbarBackground(Color(red: 48 / 255.0, green: 159 / 255.0, blue: 204 / 255.0),for: .navigationBar)
                    .toolbarBackground(.visible, for: .navigationBar)
+                   .onAppear{
+                       print("detail_action")
+                       Analytics.logEvent("detail_action", parameters: ["type":type.lowercased()])
+
+                   }
         }
         func getHistoryByType(type: String, exchangeHistory: ExchangeHistory) -> some View{
-            var groupedData = [String: (Double, Double, Double)]()
+            var groupedData = [String: (Double, Double, Double, String)]()
             let counttype = exchangeHistory.dollarHistory.filter { $0.exchanges.contains { $0.type == type } }.count
 
             for exchangeData in exchangeHistory.dollarHistory {
                     for exchangeInfo in exchangeData.exchanges where exchangeInfo.type == type {
+                        let dateKeyFormatter = DateFormatter()
+                        dateKeyFormatter.dateFormat = "yyyy/MM/dd"
+                        
                         let dateFormatter = DateFormatter()
                         dateFormatter.dateFormat = "dd/MM/yyyy"
-                        let date = dateFormatter.string(from: exchangeData.date)
                         
-                        if groupedData[date] == nil {
-                            groupedData[date] = (0, 0, 0)
+                        let date = dateFormatter.string(from: exchangeData.date)
+                        let key = dateKeyFormatter.string(from: exchangeData.date)
+
+                        if groupedData[key] == nil {
+                            groupedData[key] = (0, 0, 0, "")
                         }
                         
-                        groupedData[date]!.0 += exchangeInfo.sellValue
-                        groupedData[date]!.1 += exchangeInfo.buyValue
-                        groupedData[date]!.2 += 1
+                        groupedData[key]!.0 += exchangeInfo.sellValue
+                        groupedData[key]!.1 += exchangeInfo.buyValue
+                        groupedData[key]!.2 += 1
+                        groupedData[key]!.3 = date
                     }
                 }
             let sortedKeys = groupedData.keys.sorted().reversed()
             let filteredData = sortedKeys.map { key in
-                (key, groupedData[key]!.0 / groupedData[key]!.2, groupedData[key]!.1 / groupedData[key]!.2)
+                (groupedData[key]!.3, groupedData[key]!.0 / groupedData[key]!.2, groupedData[key]!.1 / groupedData[key]!.2)
             }
             return List {
                 ForEach(filteredData, id: \.0) { item in
@@ -174,7 +193,7 @@ struct CurrencyGridView: View {
     private func scheduleTimer() {
         self.timer?.invalidate()
 
-        self.timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { _ in
             viewModel.fetchData(withLoading: false)
         }
     }
@@ -218,6 +237,7 @@ struct CurrencyGridView: View {
                             .padding(.bottom, 6)
                 }
             }
+            
         }
         
     }

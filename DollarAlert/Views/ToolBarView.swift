@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
 
 struct ToolBarView: View {
     @State private var isCopied = false
@@ -13,8 +14,11 @@ struct ToolBarView: View {
     @ObservedObject var viewModel: ViewModel
 
     var body: some View {
+        
         HStack {
             Button(action: {
+                Analytics.logEvent("copy_action", parameters: nil)
+
                 UIPasteboard.general.string = formattedText(exchange: viewModel.exchange!)
                 isCopied = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -23,7 +27,7 @@ struct ToolBarView: View {
             }) {
                 VStack{
                     Image(systemName: "doc.on.doc.fill")
-                        .resizable() // Hace que la imagen sea redimensionable
+                        .resizable()
                                     .frame(width: 20, height: 20)
                     Text("Copiar").font(.system(size: 10, weight: .bold))
 
@@ -32,8 +36,10 @@ struct ToolBarView: View {
             
             Button(action: {
                 self.isLinkActive = true
+                Analytics.logEvent("simulation_action", parameters: nil)
 
             }) {
+
                 VStack{
                     Image(systemName: "dollarsign.square.fill")
                         .resizable() // Hace que la imagen sea redimensionable
@@ -47,6 +53,8 @@ struct ToolBarView: View {
             )
 
             Button(action: {
+                Analytics.logEvent("share_action", parameters: nil)
+
                 let textToCopy = formattedText(exchange: viewModel.exchange!)
 
                 if UIDevice.current.userInterfaceIdiom == .pad {
@@ -66,6 +74,8 @@ struct ToolBarView: View {
 
             Button(action: {
                 viewModel.fetchData(withLoading: true)
+                Analytics.logEvent("copy_action", parameters: nil)
+
             }) {
                 VStack{
                     Image(systemName: "arrow.counterclockwise.icloud.fill")
@@ -144,7 +154,7 @@ func formattedText(exchange: ExchangeRateData) -> String {
            text += "*Dólar \(exchangeRate.type)*\nCompra: \(formatedBuyVal) | Venta: \(formatedSellVal)\n\n"
        }
     text += "Fecha de extracción: \(formattedDate(exchange.date))\n\n"
-    text += "Descarga la aplicación Dolarizate desde el App Store: https://apps.apple.com/app/Dolarizate"
+    text += "Descarga la aplicación Dolarizate desde el App Store: https://apps.apple.com/us/app/dolarizate/id6468905246"
 
        return text
    }

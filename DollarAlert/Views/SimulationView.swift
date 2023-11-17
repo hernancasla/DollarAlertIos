@@ -1,4 +1,6 @@
 import SwiftUI
+import FirebaseAnalytics
+import Foundation
 
 struct SimulationView: View {
     @State  var inputValue: String = "" // Estado para almacenar el valor del campo de entrada
@@ -15,9 +17,12 @@ struct SimulationView: View {
 
     var body: some View {
         VStack(alignment: .leading){
+
             HStack {
                     Button(action: {
                         arsToUsd = true
+                        Analytics.logEvent("simulation_action", parameters: ["ArsToDollar": amount.description])
+
                     }) {
                         Text("ARS >> USD")
                             .frame(maxWidth: .infinity)
@@ -29,6 +34,8 @@ struct SimulationView: View {
                 
                     Button(action: {
                         arsToUsd = false
+                        Analytics.logEvent("simulation_action", parameters: ["DollarToArs": amount])
+
                     }) {
                         Text("USD >> ARS")
                             .frame(maxWidth: .infinity)
@@ -78,7 +85,7 @@ struct SimulationView: View {
                 Text(arsToUsd ? "Con \(formatAsCurrency(amount)) Pesos podes comprar": "Con \(formatAsCurrency(amount)) Dólares podes vender a")
 
                     List(exchangeData.exchanges) { exchangeRate in
-                        let val = arsToUsd ? amount/exchangeRate.buyValue : exchangeRate.sellValue*amount
+                        let val = arsToUsd ? amount/exchangeRate.sellValue : exchangeRate.buyValue*amount
                         ListItemView(imageName: "\(exchangeRate.type.lowercased())-dollar", value: val, fixedText: exchangeRate.type, currency: arsToUsd ?  "U$D":"ARS")
                     }
             }
@@ -89,6 +96,7 @@ struct SimulationView: View {
         .navigationTitle("Simulador")
         .toolbarBackground(backgroundColor,for: .navigationBar)
                .toolbarBackground(.visible, for: .navigationBar)
+              
         }
     var numberFormatter: NumberFormatter {
             let formatter = NumberFormatter()
